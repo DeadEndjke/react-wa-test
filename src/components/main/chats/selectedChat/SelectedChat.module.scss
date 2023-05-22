@@ -1,0 +1,26 @@
+.selectedChat{
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 0.5fr 10fr 0.5fr;
+    //position: relative;
+    .selectedNumber{}
+    .chat{
+        // background-color:cadetblue;
+        position:absolute;
+        bottom:60px;
+        right: 10px;
+    }
+    .writeMessage{
+        bottom: 0;
+        padding: 20px 0;
+        width: 70vw;
+        position:absolute;
+        bottom:0;
+        input{
+            width: 80%;
+        }
+        button{
+        }
+    }
+    
+}
