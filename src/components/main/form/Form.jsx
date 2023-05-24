@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import s from './Form.module.scss'
-import { Link } from "react-router-dom";
 
-export default function Form({func}){
-    const[id, setId] = useState("1101822599")
-    const[token, setToken] = useState("906410c8228e4ec3b632debe7a461c541aaedded28464d3c88")
+export default function Form({func, err}){
+    const[id, setId] = useState("1101822604")
+    const[token, setToken] = useState("83f73891b7f245499a95f74b8e46bcc59cb71113366e4a9a97")
     return(
     <form className={s.form} onSubmit={
         (e) => {
@@ -17,7 +16,7 @@ export default function Form({func}){
 
         <label >apiTokenInstance</label>
         <input type="text" value={token} onChange={ e => setToken(e.target.value)}/>
-
+        {err ? <div className = {s.error}>login error</div>:<></>}
         <button className={s.btn} type="submit"> accept</button>
     </form>
     )

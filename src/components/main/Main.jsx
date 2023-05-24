@@ -11,7 +11,7 @@ import axios from "axios"
 export default function Main(){
     const [isAuth, setIsAuth] = useState(false) 
     const [person, setPerson] = useState({})
-    //id:'', token:''
+    const [err, setErr] = useState(false)
 
     function isAuthorized(id, token){
         
@@ -23,18 +23,14 @@ export default function Main(){
            }else{
             setIsAuth(0)
            }
-          });
+          }).catch(err => setErr(true));
     }
-
- 
-        
-
    
     {
         if (!isAuth){
             return(
                 <div className = {s.main}>
-                    <Form func = {isAuthorized}/>
+                    <Form func = {isAuthorized} err ={err}/>
                 </div>
             )
         }else{

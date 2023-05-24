@@ -1,11 +1,28 @@
-.message{
-    background-color: coral;
+.messageOutgoing{
+    background-color: #005c4b;
     border-radius: 10px;
     height: 40px;
-    margin-top: 5px;
+    margin: 5px 20px;
     display: table;
     padding: 5px;
-    margin-right: 0;
-
-    
+    position: relative;
+    order: 999;
+    margin-left: auto;
+    text-align: end;
+    align-items: end;
+    color: white;
 }
+
+.messageIncoming{
+    background-color: #111b21;
+    border-radius: 10px;
+    height: 40px;
+    margin: 5px 20px;
+    display: table;
+    padding: 5px;
+    color: white;
+    text-align: start;
+    order: 999;
+    margin-right: auto;
+}
+

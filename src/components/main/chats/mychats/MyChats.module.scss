@@ -1,5 +1,17 @@
 .myChats{
-    background-color: aquamarine;
+    background-color: #111b21;
     display: flex;
     flex-direction: column;
+    border:1px solid #2a3942;
+    .btn{
+        padding: 10px;
+        background-color: inherit;
+        color: white;
+        border-color: 2a3942;
+        border-radius: 5px;
+        &:hover{
+            background-color: #414c54;
+            cursor: pointer;
+        }
+    }
 }
