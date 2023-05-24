@@ -2,8 +2,8 @@ import { useState } from 'react';
 import s from './Form.module.scss'
 
 export default function Form({func, err}){
-    const[id, setId] = useState("1101822604")
-    const[token, setToken] = useState("83f73891b7f245499a95f74b8e46bcc59cb71113366e4a9a97")
+    const[id, setId] = useState("")
+    const[token, setToken] = useState("")
     return(
     <form className={s.form} onSubmit={
         (e) => {
