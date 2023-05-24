@@ -2,7 +2,7 @@ import { useState } from 'react'
 import s from './Modal.module.scss'
 
 export default function Modal({active, setActive, addNewChat, id}){
-    const[number, setNumber] = useState("79027839011")
+    const[number, setNumber] = useState("")
     
     return(
         <div className={active ? s.newChatActive : s.newChat} onClick={() => setActive(false)}>
